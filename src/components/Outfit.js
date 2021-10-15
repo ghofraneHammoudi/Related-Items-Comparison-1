@@ -7,9 +7,14 @@ export default function Outfit() {
                 <section className="text-gray-600 body-font ">
                     <div className="container px-6 py-8 mx-auto">
                         <div className="flex flex-wrap -m-8">
-                            <div className=" w-52 mt-8 h-80 border-2 border-gray-400 focus:border-blue-500 ">
+                            <div className=" w-52 mt-8 h-80 border-2 border-gray-400 ">
                                 <a href="" className="block relative overflow-hidden">
-                                    <div alt="ecommerce" className="object-cover object-center w-full h-52 block bg-gray-200">
+                                    <div  className="object-cover object-center w-full h-52 block bg-gray-200">
+
+
+
+                                     
+
                                         <ul>
                                             <li>
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w- ml-44 pt-2 " fill="none" viewBox="0 0 24 24" stroke="currentColor">

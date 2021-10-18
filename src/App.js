@@ -12,20 +12,14 @@ const NameOfTheService = () => {
 
             <div className="col-start-3 col-end-7 text-gray-500 flex justify-center gap-x-10 ml-16  "  >
                 <div className="row-start-1 row-end-2" > RELATED PRODUCT   <One data={data} /> </div>
-                <div className="row-start-1 row-end-2 mt-6" >   <One  data={data} /> </div>
-                <div className="row-start-1 row-end-2 mt-6" >   <One  data={data}/> </div>
-                <div className="row-start-1 row-end-2 mt-6" >   <One  data={data}/> </div>
-
-            </div>
+                        </div>
 
             <div className="col-start-3 col-end-7 text-gray-500 flex justify-center gap-x-10 ml-16"  >
 
 
 
-                <div className="row-start-1 row-end-2" > YOUR OUTFIT<Outfit /> </div>
-                <div className="row-start-1 row-end-2 mt-6" >   <Outfit /> </div>
-                <div className="row-start-1 row-end-2 mt-6" >   <Outfit /> </div>
-                <div className="row-start-1 row-end-2 mt-6" >   <Outfit /> </div>
+                <div className="row-start-1 row-end-2" > <Outfit /> </div>
+              
 
             </div>
         </div>

@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Question from './Question.jsx'
-import Answer from './Answer.jsx'
 
 class QandA extends Component {
   constructor() {
@@ -46,13 +44,13 @@ class QandA extends Component {
 
   render() {    
     return (
-      
-      
+      this.state.resulat.map((question,i)=> 
+      <div key={i}>
        
       <div className=" min-h-screen   grid grid-cols-7  justify-center  ">
         <div className="col-span-1 "></div>
         <div className=" col-span-5  grid grid-rows-6">
-          <div className="row-span-1 px-80 ">
+          <div className=" row-span-1 px-80 ">
             QUESTIONS & ANSWERS
             <div className="flex items-center justify-center">
               <div className="flex border-2 ">
@@ -75,31 +73,24 @@ class QandA extends Component {
               </div>
             </div>
           </div>
-          
           <div className="row-span-1 ">
-            <Question data={this.state.resulat} id={this.state.product_id}/>
-          {/* {this.state.resulat.map((question,i)=>(
-            <div key={i} className=" grid grid-cols-4 ">
+            <div className=" grid grid-cols-4 ">
               <div className="col-span-2 flex flex-row space-x-1">
                 <p className="text-1xl text-black font-bold">Q:</p>
-                <p>{question.question_body}</p>
+                <p>Who what which when where why where how?</p>
               </div>
               <div className="col-span-2 ">
                 <span className="text-xs font-thin space-x-1.5">
                   {" "}
-                  Helpful? Yes({question.question_helpfulness}) |{" "}
+                  Helpful? Yes(24) |{" "}
                 </span>
                 <span className="underline text-xs font-thin space-x-1.5">
                   Add Answer
                 </span>
               </div>
             </div>
-
-          ))} */}
             <div className=" grid grid-rows-2 space-x-1.5">
               <div className="row-span-1 flex flex-row space-x-1.5">
-              {/* <Answer data={this.state.resulat} id={this.state.product_id}/> */}
-              {/* <div className="row-span-1 flex flex-row space-x-1.5">
                 <p className=" text-1xl text-black font-bold ">A:</p>
                 <span />
                 Icing macaroon bear claw jelly beans chocolate cake.Cookie oat
@@ -123,10 +114,9 @@ class QandA extends Component {
                 <span className="underline text-xs font-thin space-x-1.5">
                   | Report
                 </span>
-              </div> */}
+              </div>
             </div>
           </div>
-          
           <div className="row-span-1 ">
             <div className=" grid grid-cols-4 space-x-1">
               <div className="col-span-2 flex flex-row space-x-1">
@@ -268,15 +258,15 @@ class QandA extends Component {
         <div className="col-span-1 "></div>
       </div>
       </div>
-      
-      
-    )}}
-
+      )
+    )
     
+    
+  }
+  
+}
+
 export default QandA;
-
-
-{/* export default QandA;
 // return (
 //   <div>
 //     <div className="h-64 grid grid-rows-7 min-h-screen ">
@@ -395,8 +385,4 @@ export default QandA;
 
 //     </div>
 //   </div>
-// ); */}
-
-  
-
-
+// );

@@ -1,5 +1,4 @@
 import React from 'react'
-import 'react-multi-carousel/lib/styles.css';
 
 export default function Outfit() {
   return (

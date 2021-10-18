@@ -4,6 +4,8 @@ import Outfit from './components/Outfit';
 import axios from 'axios';
 import Reviews from "./components/Reviews.js";
 import Slider from "./components/Slider.js";
+import QandA from "./Components/QandA.jsx";
+
 const NameOfTheService = () => {
     const [data, setData] = useState([])
     const [count, setCount] = useState(2);
@@ -52,7 +54,9 @@ const NameOfTheService = () => {
             {console.log(count)}
             <Slider />
             <Reviews counter={counter} response={reponse} count={count} addcounter={() => addcounter()} addhelp={() => addhelp()} />
-
+            <div>
+                <QandA />
+            </div>
         </div>
     )
 };

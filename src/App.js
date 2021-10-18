@@ -4,7 +4,7 @@ import Outfit from './components/Outfit';
 import axios from 'axios';
 import Reviews from "./components/Reviews.js";
 import Slider from "./components/Slider.js";
-import QandA from "./Components/QandA.jsx";
+import QandA from "./components/QandA.js";
 
 const NameOfTheService = () => {
     const [data, setData] = useState([])
@@ -36,27 +36,24 @@ const NameOfTheService = () => {
     }
     return (
 
-        <div className="grid grid-cols-8 grid-rows-2 gap-3 min-h-screen m-3" >
+        <div className="grid grid-cols-8 grid-rows-1 gap-3 min-h-screen m-3" >
 
             <div className="col-start-3 col-end-7 text-gray-500 flex justify-center gap-x-10 ml-16  "  >
                 <div className="row-start-1 row-end-2" > RELATED PRODUCT   <One data={data} /> </div>
             </div>
 
             <div className="col-start-3 col-end-7 text-gray-500 flex justify-center gap-x-10 ml-16"  >
-
-
-
                 <div className="row-start-1 row-end-2" > <Outfit /> </div>
-
-
             </div>
 
-            {console.log(count)}
-            <Slider />
-            <Reviews counter={counter} response={reponse} count={count} addcounter={() => addcounter()} addhelp={() => addhelp()} />
-            <div>
+            <div className="col-start-3 col-end-7  ">
+                <Slider />
+                <Reviews counter={counter} response={reponse} count={count} addcounter={() => addcounter()} addhelp={() => addhelp()} />
+            </div>
+            <div className="col-start-3 col-end-7  ">
                 <QandA />
             </div>
+
         </div>
     )
 };

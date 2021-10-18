@@ -4,8 +4,12 @@
 .wrapper {
     display: flex;
     overflow: auto;
-    width: 780px;
+    width: 850px;
   }
   .wrapper::-webkit-scrollbar {
     width: 0;
+  }
+
+hr.new1 {
+    border-top: 1px solid black;
   }
